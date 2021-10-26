@@ -13,13 +13,6 @@
         {% endblock %}
     </head>
     <body>
-        <div class="row">
-        <button class="btn btn-lg btn-primary"><a class="text-white" href="{{ path('app_index') }}"> Accueil CRM</a></button>
-        </div>
-        <div class="row mt-4">
-            <div class="col-md-10 offset-md-1">
-                {% block body %}{% endblock %}
-            </div>
-        </div>
+        {% block body %}{% endblock %}
     </body>
 </html>

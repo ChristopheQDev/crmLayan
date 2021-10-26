@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+   
+<div class="row text-center mb-4 mt-4">
+    <h1>CRM 300</h1>
+    <h3>Un nouveau CRM à la hauteur de vos attentes!</h3>
+</div>
+
+<div class="row">
+    <div class="col-md-6 offset-md-3 text-center">
+        <button class="btn btn-lg btn-primary"><a class="text-white" href="{{ path('user_index') }}"> Utilisateurs</a></button>
+        <button class="btn btn-lg btn-primary"><a class="text-white" href="{{ path('company_index') }}"> Entreprises</a></button>
+        <button class="btn btn-lg btn-primary"><a class="text-white" href="{{ path('customer_index') }}"> Clients</a></button>
+    </div>
+</div>
+
+{% endblock %}
